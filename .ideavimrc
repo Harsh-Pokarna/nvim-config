@@ -1,0 +1,19 @@
+call plug#begin()
+Plug 'preservim/nerdtree' " File System Explorer
+Plug 'https://github.com/tpope/vim-commentary' " Commenting Code
+call plug#end()
+
+set number
+set relativenumber
+set tabstop=4
+set shiftwidth=4
+set autoindent
+set termguicolors
+set visualbell
+
+nnoremap <C-t> :NERDTreeToggle <CR>
+nnoremap <C-TAB> :action NextTab <CR>
+nnoremap <C-r> :action ReformatCode <CR> :action OptimizeImports <CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-q> :action CloseContent <CR>
