@@ -15,6 +15,7 @@ Plug 'junegunn/goyo.vim' " Zen Mode
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'natebosch/dartlang-snippets'
+Plug 'webdevel/tabulous'
 
 " Geneal Dev Specific Plugins
 Plug 'https://github.com/tpope/vim-commentary' " Commenting Code
@@ -64,6 +65,7 @@ let NERDTreeCustomOpenArgs={'file':{'where': 't'}}
 
 " Custom rempas
 nnoremap <C-t> :NERDTreeToggle <CR> :TagbarToggle <CR>
+nnoremap <C-q> :tabclose <CR>
 
 " Coc setup
 " Use tab for trigger completion with characters ahead and navigate.
